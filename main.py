@@ -23,7 +23,7 @@ ASSIGNED_AUDIENCE = "tds-33649ynk.apps.exam.local"
 class TokenRequest(BaseModel):
     token: str
 
-@app.post("/verify")
+@app.post("/verify/")
 def verify_token(request_data: TokenRequest):
     try:
         # 3. Decode and verify the token. PyJWT checks:
